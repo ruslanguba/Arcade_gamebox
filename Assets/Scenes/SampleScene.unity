@@ -365,6 +365,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 373646805609098032, guid: e5d95de47b4124141b0258fa0457b0b6, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1014090582493714072, guid: e5d95de47b4124141b0258fa0457b0b6, type: 3}
       propertyPath: m_Name
       value: B_Continue
@@ -411,6 +415,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1404723737751603009, guid: e5d95de47b4124141b0258fa0457b0b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451389095263733641, guid: e5d95de47b4124141b0258fa0457b0b6, type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1982304709569204829, guid: e5d95de47b4124141b0258fa0457b0b6, type: 3}
@@ -596,6 +604,7 @@ GameObject:
   - component: {fileID: 1812697169}
   - component: {fileID: 1812697171}
   - component: {fileID: 1812697170}
+  - component: {fileID: 1812697172}
   m_Layer: 2
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -664,6 +673,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812697168}
   m_CullTransparentMesh: 1
+--- !u!114 &1812697172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812697168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fc45eacd766254f9a8718e96a3e999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1997350769 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5580557200898511941, guid: e5d95de47b4124141b0258fa0457b0b6, type: 3}
