@@ -32,10 +32,6 @@ public class Asteroid : MonoBehaviour, IInteractable, IDamagable
         if(collision.gameObject.GetComponent<IDamagable>() != null)
         {
             collision.gameObject.GetComponent<IDamagable>().TakeDamage(20);
-            if (_isInteracted)
-            {
-                ScoreController.Instance.AddScore(100);
-            }
         }
     }
 
@@ -45,6 +41,7 @@ public class Asteroid : MonoBehaviour, IInteractable, IDamagable
         _mass -= _sizeReduction * 10;
         transform.localScale = Vector3.one * _size;
         _rigidbody.mass = _mass;
+        ScoreController.Instance.AddScore(10);
         CheckIfActive();
     }
 
@@ -52,6 +49,7 @@ public class Asteroid : MonoBehaviour, IInteractable, IDamagable
     {
         if (_size <= 0.5)
         {
+            ScoreController.Instance.AddScore(100);
             _asteroidDestroy.ReturnToPool();
         }
     }
