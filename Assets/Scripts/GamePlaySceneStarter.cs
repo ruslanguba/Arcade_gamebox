@@ -6,7 +6,7 @@ public class GamePlaySceneStarter : MonoBehaviour
 {
     [SerializeField] GameObject _world;
     [SerializeField] GameObject _character;
-    [SerializeField] float _cameraSize;
+    [SerializeField] float _cameraSize; 
 
     private void Awake()
     {
