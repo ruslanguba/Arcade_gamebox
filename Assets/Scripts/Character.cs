@@ -22,4 +22,9 @@ public class Character : MonoBehaviour
     {
         _characterWeapon.LookToTarget(target);
     }
+
+    public void ChamgeMoveSistem()
+    {
+        _characterMove.StabilisatorActivate();
+    }
 }

@@ -13,6 +13,11 @@ public class CharacterMove : MonoBehaviour
         _characterRigidbody = GetComponent<Rigidbody2D>();
     }
 
+    public void StabilisatorActivate()
+    {
+        _isStabilisatorActive = !_isStabilisatorActive;
+    }
+
     public void MoveCharacter(float axisX, float axisY)
     {
         Vector2 moveDirection = new Vector2(axisX, axisY).normalized;

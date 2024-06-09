@@ -21,6 +21,7 @@ public class PlayerInput : MonoBehaviour
     {
         CheckMoveDirection();
         CheckLooKDirection();
+        ActivateStabilisator();
     }
 
     public void CheckMoveDirection()
@@ -30,6 +31,14 @@ public class PlayerInput : MonoBehaviour
         if(_character != null)
         {
             _character.MoveCharacter(_moveDirectionX, _moveDirectionY);
+        }
+    }
+
+    private void ActivateStabilisator()
+    {
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            _character.ChamgeMoveSistem();
         }
     }
 
